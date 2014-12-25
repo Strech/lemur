@@ -129,7 +129,6 @@ module Lemur
       Faraday.new(faraday_options) do |faraday|
         faraday.headers['Content-Type'] = 'application/json'
         faraday.request  :url_encoded
-        faraday.response :logger
         faraday.adapter  Faraday.default_adapter
       end
     end
